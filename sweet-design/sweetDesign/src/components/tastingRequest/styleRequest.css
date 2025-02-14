@@ -1,0 +1,193 @@
+.admin-tasting-card-container {
+    background-color: rgba(244, 235, 223, 0.66);
+    border-radius: 12px;
+    padding: 0;
+    width: 80%;
+    margin: 30px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.admin-tasting-card-header {
+    background-color: #f4e1c3;
+    padding: 10px 20px;
+    border-bottom: 2px solid #e9a96b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-tasting-card-id {
+    font-size: 24px;
+    color: #ebaa6c;
+    margin: 0;
+}
+
+.admin-tasting-card-details-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.admin-tasting-card-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #ebaa6c;
+}
+
+.request-header {
+    font-size: 24px;
+    color: #ebb57a;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.request-header span {
+    font-weight: bold;
+    color: #ebaa6c;
+}
+
+.admin-tasting-card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    color: #894c26;
+}
+
+.admin-tasting-card-message {
+    width: 98%;
+    height: 80px;
+    border: 1px solid #ebb57a;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    color: #8a4d15;
+    resize: none;
+    font-family: 'Pacifico', cursive;
+}
+
+.admin-tasting-card-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.admin-tasting-card-accept,
+.admin-tasting-card-decline {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-tasting-card-accept {
+    background-color: #a1d68b;
+    color: white;
+}
+
+.admin-tasting-card-accept:hover {
+    background-color: #79b463;
+}
+
+.admin-tasting-card-decline {
+    background-color: #f08a8a;
+    color: white;
+}
+
+.admin-tasting-card-decline:hover {
+    background-color: #d76767;
+}
+
+.admin-tasting-card-message::placeholder {
+    color: #d7a582;
+    font-style: italic;
+}
+
+.admin-tasting-card-message:focus {
+    border: 2px solid #ebaa6c;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .admin-tasting-card-container {
+        width: 600px;
+    }
+
+    .admin-tasting-card-id {
+        font-size: 20px;
+    }
+
+    .admin-tasting-card-info p {
+        font-size: 14px;
+    }
+
+    .admin-tasting-card-message {
+        width: 98%;
+        height: 80px;
+        border: 1px solid #ebb57a;
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 14px;
+        color: #8a4d15;
+        resize: none;
+        font-family: 'Pacifico', cursive;
+    }
+}
+
+@media (max-width: 650px) {
+    .admin-tasting-card-container {
+        width: 400px;
+    }
+
+    .admin-tasting-card-id {
+        font-size: 18px;
+    }
+
+    .admin-tasting-card-info p {
+        font-size: 13px;
+    }
+
+    .admin-tasting-card-message {
+        width: 98%;
+        height: 80px;
+        border: 1px solid #ebb57a;
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 14px;
+        color: #8a4d15;
+        resize: none;
+        font-family: 'Pacifico', cursive;
+    }
+}
+@media (max-width: 480px) {
+    .admin-tasting-card-container {
+        width: 250px;
+    }
+
+    .admin-tasting-card-id {
+        font-size: 18px;
+    }
+
+    .admin-tasting-card-info p {
+        font-size: 13px;
+    }
+
+    .admin-tasting-card-message {
+        width: 98%;
+        height: 80px;
+        border: 1px solid #ebb57a;
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 14px;
+        color: #8a4d15;
+        resize: none;
+        font-family: 'Pacifico', cursive;
+    }
+}

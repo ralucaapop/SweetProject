@@ -1,0 +1,279 @@
+body {
+    background: linear-gradient(to bottom, #f4ebdf, #fae7fc);
+    background-attachment: fixed;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    padding: 0;
+    color: #ebaa6c;
+}
+
+.admin-order-card-container {
+    background-color: rgba(244, 235, 223, 0.66);
+    border-radius: 12px;
+    padding: 0;
+    width: 700px;
+    margin: 30px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.admin-order-card-header {
+    background-color: #f4e1c3;
+    padding: 10px 20px;
+    border-bottom: 2px solid #e9a96b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-order-card-id {
+    font-size: 24px;
+    color: #ebaa6c;
+    margin: 0;
+}
+
+.admin-order-card-details-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.admin-order-card-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #ebaa6c;
+}
+
+.admin-order-card-section-title {
+    font-size: 20px;
+    margin: 15px 0 10px;
+    color: #ebaa6c;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid #e9a96b;
+    padding-bottom: 5px;
+}
+
+.admin-order-card-product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.admin-order-card-product-item {
+    background-color: #f4e1c3;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-order-card-product-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.admin-order-card-product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-order-card-product-name {
+    font-size: 16px;
+    color: #ebaa6c;
+    margin: 0;
+    text-align: center;
+}
+
+.admin-order-card-modal-overlay {
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba(0,0,0,0.4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index: 1000;
+}
+
+.admin-order-card-modal-content {
+    background: #f6eadc;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #e9a96b;
+    width: 300px;
+    max-height: 80vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.admin-order-card-modal-title {
+    color: #ebaa6c;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 1px solid #e9a96b;
+    padding-bottom: 5px;
+}
+
+.admin-order-card-modal-image {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto 10px;
+    display: block;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.admin-order-card-close-btn {
+    background-color: #f6eadc;
+    border: 2px solid #e9a96b;
+    border-radius: 8px;
+    color: #e9a96b;
+    font-family: 'Pacifico', cursive;
+    font-size: 14px;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    align-self: center;
+}
+
+.admin-order-card-close-btn:hover {
+    background-color: #ebaa6c;
+    color: #fff;
+}
+@media (max-width: 900px) {
+    .admin-order-card-container {
+        width: 500px;
+    }
+
+    .admin-order-card-id {
+        font-size: 20px;
+    }
+
+    .admin-order-card-info p {
+        font-size: 14px;
+    }
+
+    .admin-order-card-section-title {
+        font-size: 18px;
+    }
+
+    .admin-order-card-product-name {
+        font-size: 14px;
+    }
+
+    .admin-order-card-modal-title {
+        font-size: 18px;
+    }
+
+    .admin-order-card-modal-image {
+        width: 80px;
+    }
+
+    .admin-order-card-close-btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-order-card-container {
+        width: 600px;
+    }
+
+    .admin-order-card-id {
+        font-size: 20px;
+    }
+
+    .admin-order-card-info p {
+        font-size: 14px;
+    }
+
+    .admin-order-card-section-title {
+        font-size: 18px;
+    }
+
+    .admin-order-card-product-name {
+        font-size: 14px;
+    }
+
+    .admin-order-card-modal-title {
+        font-size: 18px;
+    }
+
+    .admin-order-card-modal-image {
+        width: 80px;
+    }
+
+    .admin-order-card-close-btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .admin-order-card-container {
+        width: 400px;
+    }
+
+    .admin-order-card-id {
+        font-size: 18px;
+    }
+
+    .admin-order-card-info p,
+    .admin-order-card-product-name {
+        font-size: 13px;
+    }
+
+    .admin-order-card-modal-title {
+        font-size: 16px;
+    }
+
+    .admin-order-card-close-btn {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .admin-order-card-container {
+        width: 250px;
+    }
+    .admin-order-card-id {
+        font-size: 18px;
+    }
+
+    .admin-order-card-info p,
+    .admin-order-card-product-name {
+        font-size: 13px;
+    }
+
+    .admin-order-card-modal-title {
+        font-size: 16px;
+    }
+
+    .admin-order-card-close-btn {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}

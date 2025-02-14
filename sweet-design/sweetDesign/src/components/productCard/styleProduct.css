@@ -1,0 +1,61 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2e0c5;
+    border-radius: 15px;
+    height: 300px;
+    width: 260px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+   }
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-image-container {
+    position: relative;
+    border: 3px solid #f1c1e7;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.product-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: fill;
+
+}
+
+.product-price {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: white;
+    color: #ff7b7b;
+    font-size: 40px;
+    border: 2px solid #ffa26b;
+    border-radius: 40%;
+    padding: 10px 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Pacifico', cursive;
+}
+
+.product-info {
+    margin-top: 0px;
+}
+
+.product-name {
+    font-size: 20px;
+    color: #e9a96b;
+}
+
+.product-ingredients {
+    font-size: 15px;
+    color: #8b572a;
+    margin-top: -26px;
+}

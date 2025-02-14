@@ -1,0 +1,177 @@
+body {
+    background: linear-gradient(to bottom, #f4ebdf, #fae7fc);
+    background-attachment: fixed;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    padding: 0;
+    color: #ebaa6c;
+}
+
+.orders-admin-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.orders-page-title {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 20px;
+    color: #ebaa6c;
+    text-shadow: 1px 1px #ffffffaa;
+}
+
+.orders-section-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+    background: #f6eadc;
+    border: 2px solid #e9a96b;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.section-button {
+    background-color: #f6eadc;
+    border: 2px solid #e9a96b;
+    border-radius: 10px;
+    color: #e9a96b;
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.section-button:hover {
+    background-color: #ebaa6c;
+    color: #fff;
+    transform: scale(1.02);
+}
+
+.section-button.active {
+    background-color: #ebaa6c;
+    color: #fff;
+    border-color: #ebaa6c;
+}
+
+.orders-admin-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.orders-admin-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orders-admin-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-card-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.orders-admin-nav-button {
+    background-color: #f6eadc;
+    border: 2px solid #e9a96b;
+    border-radius: 8px;
+    color: #e9a96b;
+    font-family: 'Pacifico', cursive;
+    font-size: 14px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.orders-admin-nav-button:hover {
+    background-color: #ebaa6c;
+    color: #fff;
+    transform: scale(1.03);
+}
+
+.orders-admin-nav-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.no-orders-message {
+    font-size: 18px;
+    color: #e9a96b;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.orders-admin-status-button {
+    background-color: #f4e8da;
+    border: 2px solid #e9a96b;
+    border-radius: 8px;
+    color: #e9a96b;
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.orders-admin-status-button:hover {
+    background-color: #ebaa6c;
+    color: #fff;
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .orders-page-title {
+        font-size: 36px;
+    }
+
+    .section-button {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .orders-admin-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .orders-admin-nav-button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .orders-admin-status-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-button {
+        width: 120px;
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .orders-admin-status-button {
+        width: 120px;
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}

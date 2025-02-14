@@ -1,0 +1,180 @@
+.sign-in-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../../images/background.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    color: #ebaa6c;
+    font-size: 20px;
+}
+
+.sign-in-box, .reset-password-box {
+    background-color: rgba(255, 228, 196, 0.95);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 50%;
+    padding: 40px;
+    margin: 20px auto;
+    border: 2px solid #fdc18b;
+    height: auto;
+}
+
+.app-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    color: #d2691e;
+    margin-bottom: 10px;
+}
+
+.sign-in-header, .reset-password-header {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 30px;
+    color: #ebaa6c;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.sign-in-form, .reset-password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sign-in-form div, .reset-password-form div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1px;
+}
+
+.sign-in-form label, .reset-password-form label {
+    font-size: 20px;
+    color: #ebaa6c;
+    font-weight: bold;
+    text-align: left;
+    flex: 1;
+}
+
+.sign-in-form input, .reset-password-form input {
+    padding: 10px;
+    border: 1px solid #ebaa6c;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 70%;
+    color: #8a4d15;
+}
+
+.sign-in-button, .reset-password-button {
+    background-color: #f4a460;
+    color: white;
+    font-size: 18px;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+.sign-in-button:hover, .reset-password-button:hover {
+    background-color: #d2691e;
+}
+
+.link-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot-password-link, .create, .back-to-signin-link {
+    color: #9f693c;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.forgot-password-link:hover, .create:hover, .back-to-signin-link:hover {
+    color: #ebaa6c;
+}
+
+.reset-message {
+    color: green;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .sign-in-box, .reset-password-box {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .sign-in-form label, .reset-password-form label {
+        font-size: 18px;
+    }
+
+    .sign-in-form input, .reset-password-form input {
+        width: 65%;
+        font-size: 14px;
+    }
+
+    .sign-in-button, .reset-password-button {
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .sign-in-header, .reset-password-header {
+        font-size: 26px;
+    }
+
+    .link-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .forgot-password-link, .create, .back-to-signin-link {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .sign-in-box, .reset-password-box {
+        width: 70%;
+        padding: 20px;
+    }
+
+    .sign-in-form div, .reset-password-form div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sign-in-form label, .reset-password-form label {
+        font-size: 16px;
+        width: 60%;
+        margin-bottom: 5px;
+    }
+
+    .sign-in-form input, .reset-password-form input {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .sign-in-button, .reset-password-button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .sign-in-header, .reset-password-header {
+        font-size: 24px;
+    }
+
+    .link-container {
+        align-items: flex-start;
+    }
+}

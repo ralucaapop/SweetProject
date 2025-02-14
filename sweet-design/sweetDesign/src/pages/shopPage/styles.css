@@ -1,0 +1,129 @@
+body {
+    background: linear-gradient(to bottom, #f4ebdf, #fae7fc);
+    background-attachment: fixed;
+    font-family: 'Pacifico', cursive;
+}
+
+.shop-layout {
+    display: flex;
+    padding: 20px;
+    margin: 30px auto;
+    flex-direction: row;
+}
+
+.shop-sidebar {
+    width: 100px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.shop-item {
+    background-color: #f2e0c5;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: #e76f51;
+}
+
+.shop-button {
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-family: 'Pacifico', cursive;
+    color: #8a4d15;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.shop-button:hover {
+    transform: translateY(-5px);
+    color: #b54c1e;
+}
+
+.shop-main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 20px;
+}
+
+.shop-item:hover {
+    transform: translateY(-10px);
+}
+
+.shop-image {
+    width: 180px;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.shop-caption {
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    color: #e9a970;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.delivery-notice {
+    background-color: transparent;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 25px;
+    color: #e9a96b;
+    max-width: 800px;
+    border-radius: 5px;
+}
+
+.shop-main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px; /* Înălțime minimă, ajustează în funcție de layout */
+}
+
+/* Containerul mesajului */
+.no-products-message-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333;
+}
+
+.no-products-message {
+    font-size: 1.5em;
+    color: #333; /* Poți schimba culoarea */
+}
+
+@media (max-width: 480px) {
+    .shop-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        padding: 20px;
+    }
+}
+

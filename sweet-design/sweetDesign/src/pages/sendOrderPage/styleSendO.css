@@ -1,0 +1,141 @@
+.send-order-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    background-image: url('../../images/background.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+}
+
+.send-order-box {
+    background-color: rgba(255, 228, 196, 0.95);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 530px;
+    padding: 40px;
+    margin: 20px auto;
+    border: 2px solid #fdc18b;
+}
+
+.send-order-header {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 30px;
+    color: #ebaa6c;
+    margin-bottom: 2px;
+}
+
+.send-order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.order-form-group label {
+    font-size: 20px;
+    color: #ebaa6c;
+    font-weight: bold;
+}
+
+.send-order-form select, .send-order-form input {
+    padding: 10px;
+    border: 1px solid #ebaa6c;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    color: #8a4d15;
+    box-sizing: border-box;
+}
+
+.order-delivery-cost {
+    font-size: 15px;
+    color: #ebaa6c;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+
+.order-existing-addresses {
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+.order-address-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.order-address-option input[type="radio"] {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.order-address-label {
+    margin: 0;
+    font-size: 1em;
+    color: #8a4d15;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.order-save-address-button {
+    background-color: #ebaa6c;
+    color: white;
+    font-size: 16px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    width: fit-content;
+    align-self: center;
+    transition: background-color 0.3s ease;
+}
+
+.order-save-address-button:hover {
+    background-color: #d2691e;
+}
+
+.order-submit-button {
+    background-color: #f4a460;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 250px;
+    margin: 20px auto 0;
+    display: block;
+}
+
+.order-submit-button:hover {
+    background-color: #d2691e;
+}
+
+@media (max-width: 480px) {
+    .send-preorder-box, .send-order-box, .other-form-box {
+        background-color: rgba(255, 228, 196, 0.95);
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 250px;
+        padding: 40px;
+        margin: 20px auto;
+        border: 2px solid #fdc18b;
+    }
+}

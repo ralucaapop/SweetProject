@@ -1,0 +1,150 @@
+.send-preorder-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    background-image: url('../../images/background.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+}
+
+.send-preorder-box,  .other-form-box {
+    background-color: rgba(255, 228, 196, 0.95);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 530px;
+    padding: 40px;
+    margin: 20px auto;
+    border: 2px solid #fdc18b;
+    height: 800px;
+}
+
+.send-preorder-header, .send-order-header, .other-form-header {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 30px;
+    color: #ebaa6c;
+    margin-bottom: 2px;
+}
+
+.send-preorder-form, .send-order-form, .other-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.send-preorder-form > .form-group,
+.send-order-form > .form-group,
+.other-form > .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.send-preorder-form label, .send-order-form label, .other-form label {
+    font-size: 20px;
+    color: #ebaa6c;
+    font-weight: bold;
+}
+
+.send-preorder-form select, .send-preorder-form input,
+.send-order-form select, .send-order-form input,
+.other-form select, .other-form input {
+    padding: 10px;
+    border: 1px solid #ebaa6c;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    color: #8a4d15;
+    box-sizing: border-box;
+}
+
+.delivery-cost, .address-display {
+    font-size: 15px;
+    color: #ebaa6c;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+
+.send-preorder-button, .send-order-button, .other-form-button {
+    background-color: #f4a460;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 250px;
+    margin: 20px auto 0;
+    display: block;
+}
+
+.send-preorder-button:hover, .send-order-button:hover, .other-form-button:hover {
+    background-color: #d2691e;
+}
+
+.date-restriction-message {
+    color: #ebaa6c;
+}
+
+.existing-addresses {
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.address-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.address-option input[type="radio"] {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.address-label {
+    margin: 0;
+    font-size: 1em;
+    color: #8a4d15;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+
+.save-address-button {
+    background-color: #ebaa6c;
+    color: white;
+    font-size: 16px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    width: fit-content;
+    align-self: center;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 480px) {
+    .send-preorder-box, .send-order-box, .other-form-box {
+        background-color: rgba(255, 228, 196, 0.95);
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 250px;
+        padding: 40px;
+        margin: 20px auto;
+        border: 2px solid #fdc18b;
+    }
+}
+
+
+

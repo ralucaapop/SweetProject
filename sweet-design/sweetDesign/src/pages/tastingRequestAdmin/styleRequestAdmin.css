@@ -1,0 +1,21 @@
+.request-admin-container {
+    background-color: #f8f0e3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.request-admin-header {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    color: #d2691e;
+    margin-bottom: 20px;
+}
+
+.request-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}

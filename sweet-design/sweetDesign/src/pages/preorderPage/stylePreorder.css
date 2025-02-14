@@ -1,0 +1,94 @@
+body {
+    background: linear-gradient(to bottom, #f4ebdf, #fae7fc);
+    background-attachment: fixed;
+    font-family: 'Pacifico', cursive;
+}
+
+.preorder-layout {
+    display: flex;
+    padding: 20px;
+    margin: 30px auto;
+    flex-direction: row;
+}
+
+.preorder-sidebar {
+    width: 100px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.preorder-item {
+    background-color: #f2e0c5;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: #e76f51;
+}
+
+.preorder-button {
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-family: 'Pacifico', cursive;
+    color: #8a4d15;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.preorder-button:hover {
+    transform: translateY(-5px);
+    color: #b54c1e;
+}
+
+.preorder-main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preorder-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 20px;
+}
+
+.preorder-item:hover {
+    transform: translateY(-10px);
+}
+
+.preorder-image {
+    width: 180px;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.preorder-caption {
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    color: #e9a970;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .preorder-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        padding: 20px;
+    }
+}
+

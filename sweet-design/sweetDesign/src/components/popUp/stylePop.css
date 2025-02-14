@@ -1,0 +1,46 @@
+.popup-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90vw;
+    height: 150vh;
+    background-color: rgba(247, 229, 247, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-family: Pacifico, cursive;
+}
+
+.popup-content {
+    background: rgba(251, 238, 223, 0.82);
+    width: 180px;
+    height: 120px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid #e9a96b;
+
+}
+
+.popup-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup-message {
+    font-size: 17px;
+    color: #894c26;
+    text-align: center;
+    margin-top: 20px;
+}

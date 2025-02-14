@@ -1,0 +1,12 @@
+:root {
+}
+
+body {
+  margin: 0;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

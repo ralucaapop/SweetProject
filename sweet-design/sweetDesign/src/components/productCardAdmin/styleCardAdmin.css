@@ -1,0 +1,81 @@
+.admin-product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2e0c5;
+    border-radius: 15px;
+    height: 350px;
+    width: 260px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.admin-product-card:hover {
+    transform: translateY(-10px);
+}
+
+.admin-product-image-container {
+    position: relative;
+    border: 3px solid #f1c1e7;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.admin-product-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: fill;
+}
+
+.admin-product-price {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: white;
+    color: #ff7b7b;
+    font-size: 40px;
+    border: 2px solid #ffa26b;
+    border-radius: 40%;
+    padding: 10px 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Pacifico', cursive;
+}
+
+.admin-product-info {
+    margin-top: 0px;
+}
+
+.admin-product-name {
+    font-size: 20px;
+    color: #e9a96b;
+}
+
+.admin-product-ingredients {
+    font-size: 15px;
+    color: #8b572a;
+    margin-top: -26px;
+}
+
+.admin-product-status-button {
+    background-color: #f6eadc;
+    border: 2px solid #d88f55;
+    border-radius: 8px;
+    color: #e7a86a;
+    font-family: 'Pacifico', cursive;
+    font-size: 14px;
+    padding: 8px 12px;
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top:0px;
+    margin-bottom: 10px;
+}
+
+.admin-product-status-button:hover {
+    background-color: #d88f55;
+    color: white;
+    transform: translateY(-3px);
+}

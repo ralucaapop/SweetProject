@@ -1,0 +1,286 @@
+body {
+    background: linear-gradient(to bottom, #f4ebdf, #fae7fc);
+    background-attachment: fixed;
+    font-family: 'Pacifico', cursive;
+}
+
+.admin-description-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    width: 830px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-description-card-image-background {
+    flex: 1;
+    background-color: #f4e1c3;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-description-card-product-image {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.admin-description-card-details-section {
+    flex: 2;
+    padding-left: 30px;
+    color: #ebaa6c;
+}
+
+.admin-description-card-product-name {
+    font-size: 40px;
+    color: #ebaa6c;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.admin-description-card-product-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #ebaa6c;
+}
+
+.admin-description-card-section-title {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #ebaa6c;
+}
+
+.admin-description-card-product-ingredients,
+.admin-description-card-allergy-info {
+    font-size: 18px;
+    color: #e9a96b;
+    margin: 5px 0;
+}
+
+.admin-description-card-product-price {
+    font-size: 18px;
+    color: #e9a96b;
+    margin-left: 5px;
+}
+
+.admin-description-card-edit-btn,
+.admin-description-card-delete-btn {
+    background-color: #f6eadc;
+    border: 2px solid #e9a96b;
+    border-radius: 10px;
+    color: #e9a96b;
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+    width: 160px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.admin-description-card-edit-btn:hover,
+.admin-description-card-delete-btn:hover {
+    background-color: #ebaa6c;
+    color: white;
+}
+
+.admin-edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f6eadc;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #e9a96b;
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+.admin-edit-form h2 {
+    color: #ebaa6c;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.admin-edit-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #e9a96b;
+    margin-bottom: 10px;
+    font-family: 'Pacifico', cursive;
+}
+
+.admin-edit-form input,
+.admin-edit-form textarea,
+.admin-edit-form select {
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+    padding: 8px;
+    border: 2px solid #e9a96b;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #ef8c1c;
+    transition: border-color 0.3s ease;
+}
+
+.admin-edit-form input:focus,
+.admin-edit-form textarea:focus,
+.admin-edit-form select:focus {
+    border-color: #ebaa6c;
+    outline: none;
+}
+
+.admin-edit-form textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+.admin-edit-form select {
+    width: 100px;
+}
+
+.admin-edit-form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.admin-edit-form-buttons button {
+    background-color: #faf4ed;
+    border: 2px solid #e9a96b;
+    border-radius: 10px;
+    color: #e9a96b;
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.admin-edit-form-buttons button:hover {
+    background-color: #ebaa6c;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .admin-description-card-container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        padding: 15px;
+    }
+
+    .admin-description-card-product-image {
+        width: 180px;
+        margin-bottom: 20px;
+    }
+
+    .admin-description-card-image-background {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .admin-description-card-details-section {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .admin-description-card-product-name {
+        font-size: 32px;
+    }
+
+    .admin-description-card-product-description,
+    .admin-description-card-product-ingredients,
+    .admin-description-card-allergy-info,
+    .admin-description-card-product-price {
+        font-size: 16px;
+    }
+
+    .admin-description-card-section-title {
+        font-size: 18px;
+    }
+
+    .admin-edit-form {
+        width: 95%;
+        margin-left: 100px;
+    }
+
+    .admin-description-card-edit-btn,
+    .admin-description-card-delete-btn {
+        width: 140px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .admin-description-card-product-name {
+        font-size: 28px;
+    }
+
+    .admin-description-card-product-image {
+        width: 150px;
+    }
+
+    .admin-description-card-product-description,
+    .admin-description-card-product-ingredients,
+    .admin-description-card-allergy-info,
+    .admin-description-card-product-price {
+        font-size: 14px;
+    }
+
+    .admin-edit-form {
+        width: 75%;
+        margin-left: 20px;
+    }
+
+    .admin-description-card-section-title {
+        font-size: 16px;
+    }
+
+    .admin-edit-form h2 {
+        font-size: 20px;
+    }
+
+    .admin-edit-form label {
+        font-size: 14px;
+    }
+
+    .admin-edit-form input,
+    .admin-edit-form textarea,
+    .admin-edit-form select {
+        font-size: 14px;
+    }
+
+    .admin-edit-form-buttons button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .admin-description-card-edit-btn,
+    .admin-description-card-delete-btn {
+        width: 160px;
+        height: 35px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,185 @@
+
+.ps-container {
+    transform: translate(0%, 0%);
+    display: flex;
+    background: linear-gradient(to bottom, #f4ebdf, #fae7fc);
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: #e4964e;
+}
+
+
+
+
+.ps-image img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ps-details {
+    flex: 1;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #e4964e;
+}
+
+.ps-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e59450;
+}
+
+.ps-description {
+    font-size: 16px;
+    color: #e39b64;
+    margin: 0 0 0;
+}
+
+.ps-price-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e4964e;
+}
+
+.ps-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e4964e;
+    margin: 8px 0;
+}
+
+.ps-quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.ps-quantity button {
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 50%;
+    padding: 6px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #e2954d;
+}
+
+.ps-quantity span {
+    margin: 0 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #e2954d;
+}
+
+.ps-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.ps-remove {
+    color: #e3954f;
+    text-decoration: underline;
+    font-size: 14px;
+    margin: 4px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.ps-notes {
+    margin-top: 10px;
+    max-width: 300px;
+}
+
+.ps-notes label {
+    font-size: 24px;
+    color: #8a4d15;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.ps-notes textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #f9e2d3;
+    resize: vertical;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    .ps-container {
+        flex-direction: column;
+        align-items: center;
+        width: 320px;
+    }
+
+    .ps-image img {
+        width: 80px;
+        height: 100px;
+    }
+
+    .ps-details {
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ps-price-section {
+        width: 100%;
+        align-items: center;
+        margin-top: 16px;
+    }
+
+    .ps-quantity {
+        margin-top: 12px;
+    }
+
+    .ps-notes textarea {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .ps-container {
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+    }
+
+    .ps-name {
+        font-size: 18px;
+    }
+
+    .ps-description {
+        font-size: 14px;
+    }
+
+    .ps-price {
+        font-size: 20px;
+    }
+
+    .ps-quantity button,
+    .ps-quantity span {
+        font-size: 16px;
+    }
+
+    .ps-remove {
+        font-size: 12px;
+    }
+
+    .ps-notes textarea {
+        height: 50px;
+    }
+}

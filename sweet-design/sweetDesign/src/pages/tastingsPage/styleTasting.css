@@ -1,0 +1,97 @@
+.taste-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../../images/background.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+}
+
+.taste-box {
+    background-color: rgba(255, 228, 196, 0.95);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 530px;
+    padding: 40px;
+    margin: 20px auto;
+    border: 2px solid #fdc18b;
+    height: 455px;
+}
+
+.app-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    color: #d2691e;
+    margin-bottom: 10px;
+}
+
+.taste-header {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 30px;
+    color: #ebaa6c;
+    margin-bottom: 20px;
+}
+
+.taste-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.taste-form div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.taste-form label {
+    font-size: 20px;
+    color: #ebaa6c;
+    font-weight: bold;
+    text-align: left;
+    flex: 1;
+}
+
+.taste-form input {
+    padding: 10px;
+    border: 1px solid #ebaa6c;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 70%;
+    color: #8a4d15;
+}
+
+.taste-button {
+    background-color: #f4a460;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+.taste-button:hover {
+    background-color: #d2691e;
+}
+
+@media (max-width: 480px) {
+    .taste-box {
+        background-color: rgba(255, 228, 196, 0.95);
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+        padding: 40px;
+        margin: 20px auto;
+        border: 2px solid #fdc18b;
+        height: 600px;
+    }
+}
