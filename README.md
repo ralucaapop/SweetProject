@@ -8,9 +8,6 @@ Aplicația este construită folosind arhitectura 3-layer (trei straturi), fiecar
   - **Business Logic Layer**: responsabil pentru implementarea regulilor și proceselor care definesc modul în care funcționează sistemul (pentru aplicația “DentHelp” acest strat este implementat folosind limbajul 
  de programare Java împreună cu SpringBoot)
   - **Data Access Layer**: responsabil pentru interacțiunea cu baza de date (baza de date folosită în aplicație este de tip MySql)
-
-## Usecase
-  ![diagrama uc](doc/userUC.jpeg)   ![diagrama uc](doc/userUC.jpeg)
   
 ## Functionalitati
 
